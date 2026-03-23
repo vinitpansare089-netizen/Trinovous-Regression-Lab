@@ -1,43 +1,73 @@
-# ML Projects
+# 🚀 Trinovous Regression Lab
 
-Welcome to the ML Projects repository. This collection contains various machine learning projects and experiments.
+## 🎯 Problem
 
-## Projects
+Predict student math scores using machine learning.
 
-- **Project Name**: Brief description
-- **Project Name**: Brief description
+---
 
-## Getting Started
+## 📊 Dataset
 
-### Prerequisites
-- Python 3.8+
-- pip or conda
+Students Performance in Exams (Kaggle)
 
-### Installation
+Features:
+
+* Reading Score
+* Writing Score
+* Gender, Lunch, etc. (later)
+
+Target:
+
+* Math Score
+
+---
+
+## 🧠 Approach
+
+1. Data Analysis using Pandas
+2. Data Cleaning & Feature Selection
+3. Implemented Linear Regression (from scratch using NumPy)
+4. Implemented Gradient Descent
+5. Model Evaluation using MSE
+6. Compared with sklearn model
+
+---
+
+## 📈 Results
+
+| Model                     | MSE              |
+| ------------------------- | ---------------- |
+| Custom Gradient Descent   | (add your value) |
+| Sklearn Linear Regression | (add value)      |
+
+---
+
+## ⚙️ Tech Stack
+
+* Python
+* NumPy
+* Pandas
+* Matplotlib (optional)
+
+---
+
+## ▶️ How to Run
 
 ```bash
-git clone <repository-url>
-cd ML-projects
 pip install -r requirements.txt
+python main.py
 ```
 
-## Usage
+---
 
-Each project folder contains its own README with specific instructions.
+## 📌 Key Learnings
 
-## Project Structure
+* How ML models actually learn (not just use sklearn)
+* Gradient Descent intuition
+* Data preprocessing with Pandas
 
-```
-ML-projects/
-├── project-1/
-├── project-2/
-└── README.md
-```
+---
 
-## Contributing
+## 🔥 Author
 
-Contributions are welcome. Please create a pull request with your changes.
-
-## License
-
-This project is licensed under the MIT License.
+Vinit — Trinovous

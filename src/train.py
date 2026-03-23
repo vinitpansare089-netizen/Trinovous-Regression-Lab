@@ -1,6 +1,6 @@
 from sklearn.linear_model import LinearRegression
 
-def train(X, y):
+def train_model(X, y):
     print("training model...")
     model = LinearRegression()
     model.fit(X, y)

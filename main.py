@@ -1,7 +1,7 @@
-from src.data_loader import load_data
-from src.preprocessing import preprocess
-from student_mat.src.models.train import train_model
-from student_mat.src.evaluation.evaluate import evaluate
+from src.data.data_loader import load_data
+from src.data.preprocessing import preprocess
+from src.models.train import train_model
+from src.evaluation.evaluate import evaluate
 
 df = load_data("data/raw/student-mat.csv")
 

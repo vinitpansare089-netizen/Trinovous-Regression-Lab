@@ -37,7 +37,7 @@ Target:
 
 | Model                     | MSE              |
 | ------------------------- | ---------------- |
-| Custom Gradient Descent   | (add your value) |
+| Custom Gradient Descent   | (1.7) |
 | Sklearn Linear Regression | (add value)      |
 
 ---

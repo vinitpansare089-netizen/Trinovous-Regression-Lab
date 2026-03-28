@@ -48,6 +48,7 @@ Target:
 * NumPy
 * Pandas
 * Matplotlib (optional)
+  Seaborn
 
 ---
 

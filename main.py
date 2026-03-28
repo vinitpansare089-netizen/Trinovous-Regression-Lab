@@ -1,12 +1,12 @@
 from src.data.data_loader import load_data
-from src.data.preprocessing import preprocess
+from src.data.preprocessing import preprocess_data
 from src.models.train import train_model
 from src.evaluation.evaluate import evaluate
 
 df = load_data("data/raw/student-mat.csv")
 
 #preprocess using function
-df = preprocess(df)
+df = preprocess_data(df)
 
 #Target 
 target = "G1"

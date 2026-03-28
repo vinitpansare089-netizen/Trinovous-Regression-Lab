@@ -6,7 +6,9 @@ def train_model(X, y):
     model = LinearRegression()
     model.fit(X, y)
     #Save the model in as a file
-    joblib.dump(model, "vinit_model.pkl")
+    print("Loading...model file")
+    joblib.dump(model, "models/vinit_model.pkl")
+    print("loaded.")
 
     print("Model Trained")
     return model

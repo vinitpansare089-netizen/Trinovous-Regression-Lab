@@ -66,6 +66,7 @@ python main.py
 * How ML models actually learn (not just use sklearn)
 * Gradient Descent intuition
 * Data preprocessing with Pandas
+  Built ML algorithm from scratch
 
 ---
 

@@ -30,6 +30,7 @@ Target:
 4. Implemented Gradient Descent
 5. Model Evaluation using MSE
 6. Compared with sklearn model
+7.used my algorithm
 
 ---
 

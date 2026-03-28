@@ -71,4 +71,4 @@ python main.py
 
 ## 🔥 Author
 
-Vinit — Trinovous
+Vinit Pansare— Trinovous

@@ -1,4 +1,4 @@
-# 🚀 Trinovous Regression Lab
+# 🚀 Trinovous Regression Lab powered by Vinit
 
 ## 🎯 Problem
 

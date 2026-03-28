@@ -15,6 +15,7 @@ y = df[target]
 
 model = train_model(X, y)
 
+#evaluation
 mse, rmse = evaluate(model, X, y)
 
 print("Final MSE:", mse)

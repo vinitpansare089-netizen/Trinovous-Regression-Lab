@@ -7,6 +7,7 @@ df = load_data("data/raw/student-mat.csv")
 
 df = preprocess(df)
 
+#Target 
 target = "G1"
 
 X = df.drop(target, axis=1)

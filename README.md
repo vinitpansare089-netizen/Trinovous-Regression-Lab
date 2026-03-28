@@ -49,6 +49,7 @@ Target:
 * Pandas
 * Matplotlib (optional)
   Seaborn
+  scikit-learn
 
 ---
 

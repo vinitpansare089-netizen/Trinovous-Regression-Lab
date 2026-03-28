@@ -5,6 +5,7 @@ from src.evaluation.evaluate import evaluate
 
 df = load_data("data/raw/student-mat.csv")
 
+#preprocess using function
 df = preprocess(df)
 
 #Target 

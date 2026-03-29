@@ -3,7 +3,7 @@ import joblib
 from sklearn.model_selection import GridSearchCV
 
 def train_model(X_train, y_train):
-    print("training model with Tuning...")
+    # print("training model with Tuning...")
     
 
     model = DecisionTreeRegressor(random_state=42)
@@ -19,12 +19,12 @@ def train_model(X_train, y_train):
     best_model = grid.best_estimator_
     best_params = grid.best_params_
     
-    return best_model, best_params
-    #Save the model in as a file
+    
+    # Save the model in as a file
     # print("Loading...model file")
-    # joblib.dump(model, "models/vinit_model.pkl")
+    joblib.dump(model, "models/vinit_model.pkl")
     # print("loaded.")
 
     # print("Model Trained")
-    # return model
+    return best_model, best_params
 

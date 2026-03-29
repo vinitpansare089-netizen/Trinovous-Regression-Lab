@@ -38,9 +38,9 @@ def preprocess_data(df):
     X_train = scaler.fit_transform(X_train)
     X_test = scaler.transform(X_test)
 
-    print("Loading.... scalar file")
+    # print("Loading.... scalar file")
     joblib.dump(scaler, "models/vinit_scalar.pkl")
-    print("Loaded")
+    # print("Loaded")
 
     return X_train, X_test, y_train, y_test
     

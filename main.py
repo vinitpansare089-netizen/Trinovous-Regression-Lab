@@ -4,7 +4,7 @@ from src.models.train import train_model
 from src.evaluation.evaluate import evaluate_model
 
 df = load_data("data/raw/student-mat.csv")
-print(type(df))
+# print(type(df))
 
 #preprocess using function
 X_train, X_test, y_train, y_test = preprocess_data(df)
@@ -15,6 +15,8 @@ model, params = train_model(X_train, y_train)
 
 print(f"Best Params: {params}")
 print(f"Model Type: {type(model)}")
+
+
 
 
 #evaluation

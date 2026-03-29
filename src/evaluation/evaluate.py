@@ -7,5 +7,5 @@ def evaluate_model(best_model, X_test, y_test):
     predictions = best_model.predict(X_test)
     mse = mean_squared_error(y_test, predictions)
     rmse = np.sqrt(mse)
-    print("Evaluated Model")
+    # print("Evaluated Model")
     return mse, rmse

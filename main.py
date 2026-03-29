@@ -10,7 +10,11 @@ print(type(df))
 X_train, X_test, y_train, y_test = preprocess_data(df)
 
 
-model = train_model(X_train, y_train)
+model, params = train_model(X_train, y_train)
+
+
+print(f"Best Params: {params}")
+print(f"Model Type: {type(model)}")
 
 
 #evaluation

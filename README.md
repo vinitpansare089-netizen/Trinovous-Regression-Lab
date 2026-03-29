@@ -2,7 +2,7 @@
 
 ## 🎯 Problem
 
-Predict student math scores using machine learning.
+Predict student math scores using machine learning algorithms
 
 ---
 

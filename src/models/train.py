@@ -1,10 +1,10 @@
-from sklearn.linear_model import LinearRegression
+from sklearn.tree import DecisionTreeRegressor
 import joblib
 
 def train_model(X_train, y_train):
     print("training model...")
 
-    model = LinearRegression()
+    model = DecisionTreeRegressor(max_depth=5, min_samples_split=10)
     model.fit(X_train, y_train)
     
     #Save the model in as a file

@@ -15,5 +15,11 @@ model = train_model(X_train, y_train)
 #evaluation
 mse, rmse = evaluate_model(model, X_test, y_test)
 
+train_mse, train_rmse = evaluate_model(model, X_train, y_train)
+test_mse, test_rmse = evaluate_model(model, X_test, y_test)
+
+print("Train RMSE:", train_rmse)
+print("Test RMSE:", test_rmse)
+
 print("Final MSE:", mse)
 print("RSME: ", rmse)

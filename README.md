@@ -1,56 +1,52 @@
-# 🚀 Trinovous Regression Lab powered by Vinit
+# 🎓 Student Performance Prediction (Trinovous)
 
-## 🎯 Problem
+## 🚀 Overview
+This project predicts student final grades (G3) using machine learning.
 
-Predict student math scores using machine learning algorithms
-
----
-
-## 📊 Dataset
-
-Students Performance in Exams (Kaggle)
-
-Features:
-
-* Reading Score
-* Writing Score
-* Gender, Lunch, etc. (later)
-
-Target:
-
-* Math Score
+Built as part of my AI/ML journey under the **Trinovous** brand.
 
 ---
 
-## 🧠 Approach
-
-1. Data Analysis using Pandas
-2. Data Cleaning & Feature Selection
-3. Implemented Linear Regression (from scratch using NumPy)
-4. Implemented Gradient Descent
-5. Model Evaluation using MSE
-6. Compared with sklearn model
-7.used my algorithm
+## 🧠 Problem Statement
+Predict student performance based on behavioral and academic features.
 
 ---
 
-## 📈 Results
-
-| Model                     | MSE              |
-| ------------------------- | ---------------- |
-| Custom Gradient Descent   | (1.7) |
-| Sklearn Linear Regression | (2.27)      |
+## ⚙️ Features
+- Data preprocessing (encoding, scaling)
+- Feature selection (removed G1, G2 to avoid leakage)
+- Model training with hyperparameter tuning (GridSearchCV)
+- Evaluation using RMSE
+- Prediction pipeline for new data
+- Logging & experiment tracking
 
 ---
 
-## ⚙️ Tech Stack
+## 📊 Model Performance
 
-* Python
-* NumPy
-* Pandas
-* Matplotlib (optional)
-  Seaborn
-  scikit-learn
+| Metric | Value |
+|-------|------|
+| Train RMSE | ~3.7 |
+| Test RMSE | ~4.4 |
+
+---
+
+## 🧪 Tech Stack
+- Python
+- Pandas, NumPy
+- Scikit-learn
+
+---
+
+## 📁 Project Structure
+
+project/
+├── src/
+├── models/
+├── artifacts/
+├── data/
+├── main.py
+
 
 ---
 
@@ -59,18 +55,3 @@ Target:
 ```bash
 pip install -r requirements.txt
 python main.py
-```
-
-
-## 📌 Key Learnings
-
-* How ML models actually learn (not just use sklearn)
-* Gradient Descent intuition
-* Data preprocessing with Pandas
-  Built ML algorithm from scratch
-
----
-
-## 🔥 Author
-
-Vinit Pansare— Trinovous

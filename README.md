@@ -29,6 +29,10 @@ Predict student performance based on behavioral and academic features.
 | Train RMSE | ~3.7 |
 | Test RMSE | ~4.4 |
 
+Two modeling approaches:
+
+1. Without prior grades → realistic scenario (RMSE ~4)
+2. With G2 included → high accuracy scenario (RMSE ~2)
 ---
 
 ## 🧪 Tech Stack

@@ -2,6 +2,7 @@ from src.data.data_loader import load_data
 from src.data.preprocessing import preprocess_data
 from src.models.train import train_model
 from src.evaluation.evaluate import evaluate_model
+from src.prediction.predict import predict_new
 
 df = load_data("data/raw/student-mat.csv")
 # print(type(df))
@@ -17,8 +18,6 @@ print(f"Best Params: {params}")
 print(f"Model Type: {type(model)}")
 
 
-
-
 #evaluation
 mse, rmse = evaluate_model(model, X_test, y_test)
 
@@ -30,3 +29,22 @@ print("Test RMSE:", test_rmse)
 
 print("Final MSE:", mse)
 print("RSME: ", rmse)
+
+while True:
+    studytime = int(input("Enter studytime: "))
+    failures = int(input("Enter failures: "))
+    absences = int(input("Enter absences(1-5): "))
+    # school = (input("Enter school: "))
+    # sex = int(input("Enter sex: "))
+ 
+    sample = {
+        "studytime": studytime,
+        "failures": failures,
+        "absences": absences,
+        "school": "GP",
+        "sex": "M"
+    }
+
+    result = predict_new(sample)
+
+    print("Predicted G3:", result)

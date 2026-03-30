@@ -21,7 +21,12 @@ def preprocess_data(df):
     
     # Encode categorical
     df = pd.get_dummies(df, drop_first=True)
+# after encoding
+    columns = X.columns
 
+    joblib.dump(columns, "models/columns.pkl")
+
+    
     df = df.drop(['G1', 'G2'], axis=1)
     
     # Split features & target

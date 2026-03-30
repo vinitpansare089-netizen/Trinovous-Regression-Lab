@@ -3,6 +3,10 @@ from src.data.preprocessing import preprocess_data
 from src.models.train import train_model
 from src.evaluation.evaluate import evaluate_model
 from src.prediction.predict import predict_new
+import json
+import os
+from src.logger import get_logger
+
 
 df = load_data("data/raw/student-mat.csv")
 # print(type(df))
@@ -48,3 +52,25 @@ while True:
     result = predict_new(sample)
 
     print("Predicted G3:", result)
+
+    os.makedirs("artifacts", exist_ok=True)
+
+    results = {
+        "train_rmse": train_rmse,
+        "test_rmse": test_rmse,
+        "mse": mse,
+        "best_params": params
+    }
+
+    with open("artifacts/results.json", "w") as f:
+        json.dump(results, f, indent=4)
+
+    print("Results saved to artifacts/results.json")
+    
+    logger = get_logger()
+
+    logger.info("Pipeline started")
+    logger.info(f"Best Params: {params}")
+    logger.info(f"Train RMSE: {train_rmse}")
+    logger.info(f"Test RMSE: {test_rmse}")
+

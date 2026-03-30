@@ -23,8 +23,13 @@ def preprocess_data(df):
     df = pd.get_dummies(df, drop_first=True)
 
     
-    df = df.drop(['G1', 'G2'], axis=1)
-    
+    # df = df.drop(['G1', 'G2'], axis=1)
+    df = df.drop(['G1'], axis=1)
+
+    # Feature engineering
+    df["study_failures"] = df["studytime"] * (df["failures"] + 1)
+    df["absence_level"] = df["absences"] / (df["studytime"] + 1)
+
     # Split features & target
     X = df.drop("G3", axis=1)
     y = df["G3"]

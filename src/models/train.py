@@ -1,4 +1,5 @@
-from sklearn.tree import DecisionTreeRegressor
+# from sklearn.tree import DecisionTreeRegressor
+from sklearn.ensemble import RandomForestRegressor
 import joblib
 from sklearn.model_selection import GridSearchCV
 
@@ -6,11 +7,12 @@ def train_model(X_train, y_train):
     # print("training model with Tuning...")
     
 
-    model = DecisionTreeRegressor(random_state=42)
+    model = RandomForestRegressor(random_state=42)
 
     params = {
-        "max_depth" : [3,5,7,10],
-        "min_samples_split" : [2, 5, 10]
+        "n_estimators": [50, 100],
+        "max_depth": [5, 10, None],
+        "min_samples_split": [2, 5]
     }
 
     grid = GridSearchCV(model, params, cv=5, scoring="neg_mean_squared_error")

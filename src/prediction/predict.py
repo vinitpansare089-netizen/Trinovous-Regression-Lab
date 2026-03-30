@@ -3,11 +3,11 @@ import pandas as pd
 
 def predict_new(data_dict):
     
-    print("🔮 Making prediction...")
+    print(" Making prediction...")
 
     # Load artifacts
-    model = joblib.load("models/model.pkl")
-    scaler = joblib.load("models/vinit_scaler.pkl")
+    model = joblib.load("models/vinit_model.pkl")
+    scaler = joblib.load("models/vinit_scalar.pkl")
     columns = joblib.load("models/columns.pkl")
 
     # Convert input to DataFrame

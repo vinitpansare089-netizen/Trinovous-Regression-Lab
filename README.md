@@ -1,5 +1,12 @@
 # 🎓 Student Performance Prediction (Trinovous)
 
+## 🔥 Key Highlights
+- Built a complete ML pipeline from scratch
+- Implemented data preprocessing & feature engineering
+- Performed hyperparameter tuning using GridSearchCV
+- Achieved stable model performance with proper evaluation
+- Designed prediction system for real-world usage
+
 ## 🚀 Overview
 This project predicts student final grades (G3) using machine learning.
 

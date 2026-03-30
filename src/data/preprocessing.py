@@ -21,10 +21,6 @@ def preprocess_data(df):
     
     # Encode categorical
     df = pd.get_dummies(df, drop_first=True)
-# after encoding
-    columns = X.columns
-
-    joblib.dump(columns, "models/columns.pkl")
 
     
     df = df.drop(['G1', 'G2'], axis=1)
@@ -42,6 +38,12 @@ def preprocess_data(df):
     scaler = StandardScaler()
     X_train = scaler.fit_transform(X_train)
     X_test = scaler.transform(X_test)
+
+    # after encoding
+    columns = X.columns
+
+    joblib.dump(columns, "models/columns.pkl")
+
 
     # print("Loading.... scalar file")
     joblib.dump(scaler, "models/vinit_scalar.pkl")

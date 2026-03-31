@@ -23,8 +23,8 @@ def preprocess_data(df):
     df = pd.get_dummies(df, drop_first=True)
 
     
-    # df = df.drop(['G1', 'G2'], axis=1)
-    df = df.drop(['G1'], axis=1)
+    df = df.drop(['G1', 'G2'], axis=1)
+    # df = df.drop(['G1'], axis=1)
 
     # Feature engineering
     df["study_failures"] = df["studytime"] * (df["failures"] + 1)

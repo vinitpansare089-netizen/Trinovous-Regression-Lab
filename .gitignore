@@ -1,5 +1,25 @@
+#ML(python)
 venv/
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+
+# Models & artifacts
 models/*.pkl
 artifacts/
+
+#Node - Backend
+backend/node_modules/
+backend/package-lock.json
+
+#React - frontend
+frontend/node_modules/
+frontend/build/
+
+###Environment files
+.env
+
+####OS files
+.DS_Store
+Thumbs.db

@@ -47,6 +47,7 @@ Two modeling approaches:
 - Pandas, NumPy
 - Scikit-learn
 - React
+- Express(server)
 
 ---
 

@@ -27,6 +27,6 @@ def train_model(X_train, y_train):
     joblib.dump(best_model, "models/vinit_model.pkl")
     print("loaded.")
 
-    # print("Model Trained")
+    # print("Model Trained") vinit now check evaluation file
     return best_model, best_params
 

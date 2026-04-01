@@ -48,6 +48,7 @@ Two modeling approaches:
 - Scikit-learn
 - React
 - Express(server)
+- FastAPI
 
 ---
 

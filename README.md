@@ -58,6 +58,8 @@ project/
 ├── data/
 ├── main.py
 
+later: frontend and backend
+
 
 ---
 

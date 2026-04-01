@@ -61,6 +61,7 @@ project/
 later: frontend and backend
 and fine tuning model again
 for better model predictions
+currently not satisfied with result
 
 
 ---

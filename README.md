@@ -59,6 +59,7 @@ project/
 ├── main.py
 
 later: frontend and backend
+and fine tuning model again
 
 
 ---

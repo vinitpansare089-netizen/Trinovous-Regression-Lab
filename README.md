@@ -46,6 +46,7 @@ Two modeling approaches:
 - Python
 - Pandas, NumPy
 - Scikit-learn
+- React
 
 ---
 

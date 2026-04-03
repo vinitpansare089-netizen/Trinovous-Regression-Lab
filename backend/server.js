@@ -30,7 +30,7 @@ app.post("/predict", async (req, res) => {
 });
 
 app.listen(5000, () => {
-    console.log("Backend running on port 5000 🚀");
+    console.log("Backend running on port 5000");
 });
 
 // app.get("/", (req, res) => {

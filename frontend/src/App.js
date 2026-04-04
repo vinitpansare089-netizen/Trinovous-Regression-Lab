@@ -16,17 +16,22 @@ function App() {
   };
 
   const handleSubmit = async () => {
+    
     try {
       const response = await axios.post("http://localhost:5000/predict", {
         ...form,
         school: "GP",
         sex: "M"
+        
       });
 
-      setResult(response.data.prediction);
+      setResult(response.data.Prediction);
+      console.log("FULL RESPONSE:", response);
+console.log("DATA:", response.data);
     } catch (error) {
       alert("Error connecting to backend");
     }
+    
   };
 
   return (
@@ -54,11 +59,9 @@ function App() {
 
         <button onClick={handleSubmit}>Predict</button>
 
-        {result && (
-          <div className="result">
-            Predicted Score: <strong>{result}</strong>
-          </div>
-        )}
+        <div className="result">
+  {result !== null ? `Predicted Score: ${result}` : "Enter values and click Predict"}
+</div>
       </div>
     </div>
   );

@@ -23,10 +23,10 @@ def train_model(X_train, y_train, model_type=rf):
         best_model = grid.best_estimator_
         best_params = grid.best_params_
 
-    # elif model_type == 'lr':
-    #     best_model = LinearRegression()
-    #     best_model.fit(X_train, y_train)
-    #     best_params = "no hyperparameters"
+    elif model_type == 'lr':
+        best_model = LinearRegression()
+        best_model.fit(X_train, y_train)
+        best_params = "no hyperparameters"
 
     # elif model_type == 'dt':
     #     best_model = DecisionTreeRegressor()

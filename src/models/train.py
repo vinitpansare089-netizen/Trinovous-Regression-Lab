@@ -33,10 +33,10 @@ def train_model(X_train, y_train, model_type=rf):
         best_model.fit(X_train, y_train)
         best_params = "No need of tuning"
 
-    # else:
-    #     raise ValueError("Invalid Model")
+    else:
+        raise ValueError("Invalid Model")
     
-    # joblib.dump(best_model, "models/vinit_models.pkl")
+    joblib.dump(best_model, "models/vinit_models.pkl")
     
     return best_model , best_params
 

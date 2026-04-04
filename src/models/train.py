@@ -28,10 +28,10 @@ def train_model(X_train, y_train, model_type=rf):
         best_model.fit(X_train, y_train)
         best_params = "no hyperparameters"
 
-    # elif model_type == 'dt':
-    #     best_model = DecisionTreeRegressor()
-    #     best_model.fit(X_train, y_train)
-    #     best_params = "No need of tuning"
+    elif model_type == 'dt':
+        best_model = DecisionTreeRegressor()
+        best_model.fit(X_train, y_train)
+        best_params = "No need of tuning"
 
     # else:
     #     raise ValueError("Invalid Model")

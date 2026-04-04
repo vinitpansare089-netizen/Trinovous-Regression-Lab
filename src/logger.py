@@ -7,7 +7,7 @@ logging.basicConfig(
     filename="artifacts/app.log",
     level=logging.INFO,
     format="%(asctime)s - %(levelname)s - %(message)s",
-    filemode='w'
+    filemode='a'
 )
 
 def get_logger():

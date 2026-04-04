@@ -33,48 +33,48 @@ print("Test RMSE:", test_rmse)
 print("Test R2:", test_r2)
 print("Test Mae: ", mae)
 
-# print("Final MSE:", mse)
-# print("RSME: ", rmse)
-# print("R2: ", r2)
-# print("Test Mae: ", mae)
+print("Final MSE:", mse)
+print("RSME: ", rmse)
+print("R2: ", r2)
+print("Test Mae: ", mae)
 
-#while True:
-    # studytime = int(input("Enter studytime: "))
-    # failures = int(input("Enter failures: "))
-    # absences = int(input("Enter absences(1-5): "))
-    # # school = (input("Enter school: "))
-    # # sex = int(input("Enter sex: "))
- 
-    # sample = {
-    #     "studytime": studytime,
-    #     "failures": failures,
-    #     "absences": absences,
-    #     "school": "GP",
-    #     "sex": "M"
-    # }
 
-    # result = predict_new(sample)
+studytime = int(input("Enter studytime: "))
+failures = int(input("Enter failures: "))
+absences = int(input("Enter absences(1-5): "))
+# school = (input("Enter school: "))
+# sex = int(input("Enter sex: "))
 
-    # print("Predicted G3:", result)
+sample = {
+    "studytime": studytime,
+    "failures": failures,
+    "absences": absences,
+    "school": "GP",
+    "sex": "M"
+}
 
-    # os.makedirs("artifacts", exist_ok=True)
+result = predict_new(sample)
 
-    # results = {
-    #     "train_rmse": train_rmse,
-    #     "test_rmse": test_rmse,
-    #     "mse": mse,
-    #     "best_params": params
-    # }
+print("Predicted G3:", result)
 
-    # with open("artifacts/results.json", "w") as f:
-    #     json.dump(results, f, indent=4)
+os.makedirs("artifacts", exist_ok=True)
 
-    # print("Results saved to artifacts/results.json")
-    
-    # logger = get_logger()
+results = {
+    "train_rmse": train_rmse,
+    "test_rmse": test_rmse,
+    "mse": mse,
+    "best_params": params
+}
 
-    # logger.info("Pipeline started")
-    # logger.info(f"Best Params: {params}")
-    # logger.info(f"Train RMSE: {train_rmse}")
-    # logger.info(f"Test RMSE: {test_rmse}")
+with open("artifacts/results.json", "w") as f:
+    json.dump(results, f, indent=4)
+
+print("Results saved to artifacts/results.json")
+
+logger = get_logger()
+
+logger.info("Pipeline started")
+logger.info(f"Best Params: {params}")
+logger.info(f"Train RMSE: {train_rmse}")
+logger.info(f"Test RMSE: {test_rmse}")
 

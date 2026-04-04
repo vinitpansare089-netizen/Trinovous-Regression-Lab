@@ -12,9 +12,9 @@ def train_model(X_train, y_train, model_type='rf'):
     if model_type == 'rf':
         model = RandomForestRegressor(random_state=42)
         params = {
-            "n_estimators" : [50, 100],
-            "max_depth" : [5, 10, None],
-            "min_sample_split" : [2,5]
+            "n_estimators" : [100],
+            "max_depth" : [5, 10],
+            "min_samples_split" : [5, 10]
         }
 
         grid = GridSearchCV(model, params, scoring='neg_mean_squared_error')

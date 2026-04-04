@@ -36,6 +36,13 @@ Predict student performance based on behavioral and academic features.
 | Train RMSE | ~3.7 |
 | Test RMSE | ~4.4 |
 
+|Random Forest Regressor
+
+| Metric | Value |
+|-------|------|
+| Train RMSE | ~1.48 |
+| Test RMSE | ~3.96 |
+
 Two modeling approaches:
 
 1. Without prior grades → realistic scenario (RMSE ~4)

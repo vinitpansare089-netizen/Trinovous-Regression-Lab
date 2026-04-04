@@ -31,23 +31,51 @@ Predict student performance based on behavioral and academic features.
 
 ## 📊 Model Performance
 
-| Metric | Value |
-|-------|------|
-| Train RMSE | ~3.7 |
-| Test RMSE | ~4.4 |
+|Random Forest Regressor (tuned)
 
-|Random Forest 
+|### Performance
 
 | Metric | Value |
 |-------|------|
-| Train RMSE | ~1.48 |
-| Test RMSE | ~3.96 |
+| Train RMSE | ~2.37 |
+| Test RMSE | ~3.97 |
+| MAE | ~3.22 |
+| R² Score | ~0.23 |
+
 
 Two modeling approaches:
 
 1. Without prior grades → realistic scenario (RMSE ~4)
 2. With G2 included → high accuracy scenario (RMSE ~2)
 ---
+
+## 📊 Model Evaluation
+
+### Problem Type
+This is a regression problem (predicting continuous student scores).
+
+### Metrics Used
+- RMSE (Root Mean Squared Error)
+- MAE (Mean Absolute Error)
+- R² Score
+
+### Model Comparison
+
+| Model | Train RMSE | Test RMSE | Observation |
+|------|-----------|----------|-------------|
+| Linear Regression | ~3.8 | ~4.2 | Stable but less accurate |
+| Decision Tree | 0.0 | ~4.7 | Overfitting |
+| Random Forest (unrestricted) | ~1.4 | ~3.96 | Overfitting |
+| Random Forest (tuned) | ~2.37 | ~3.97 | Best balance |
+
+### Final Model
+Random Forest Regressor (tuned)
+
+### Why this model?
+-### Interpretation
+- Model predictions are on average off by ~3–4 marks
+- Shows moderate predictive power due to limited features
+- Demonstrates reasonable generalization without severe overfitting
 
 ## 🧪 Tech Stack
 - Python

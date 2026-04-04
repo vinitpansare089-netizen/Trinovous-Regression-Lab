@@ -15,7 +15,7 @@ df = load_data("data/raw/student-mat.csv")
 X_train, X_test, y_train, y_test = preprocess_data(df)
 
 
-model, params = train_model(X_train, y_train)
+model, params = train_model(X_train, y_train, model_type='rf')
 
 
 print(f"Best Params: {params}")

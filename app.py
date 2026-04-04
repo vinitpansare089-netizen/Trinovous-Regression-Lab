@@ -7,7 +7,7 @@ import pandas as pd
 app = FastAPI()
 
 ##ML model ko load krenge
-model = joblib.load("models/vinit_model.pkl")
+model = joblib.load("models/vinit_models.pkl")
 scaler = joblib.load("models/vinit_scalar.pkl")
 columns = joblib.load("models/columns.pkl")
 

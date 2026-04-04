@@ -5,7 +5,7 @@ from sklearn.tree import DecisionTreeRegressor
 import joblib
 from sklearn.model_selection import GridSearchCV
 
-def train_model(X_train, y_train, model_type=rf):
+def train_model(X_train, y_train, model_type='rf'):
     # print("training model with Tuning...")
 
 ### Random forest selection
@@ -41,12 +41,7 @@ def train_model(X_train, y_train, model_type=rf):
     return best_model , best_params
 
 
-
-
-    
-
-
-    
+# /////////////////////////
 
     # model = RandomForestRegressor(random_state=42)
 

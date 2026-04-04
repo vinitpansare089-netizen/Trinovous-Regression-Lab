@@ -32,7 +32,7 @@ def predict(data: dict):
 
     prediction = model.predict(df)[0]
 
-    return {f'Predictions' : float(prediction)}
+    return {f'Prediction' : float(prediction)}
 
 
 

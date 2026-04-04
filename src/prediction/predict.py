@@ -6,7 +6,7 @@ def predict_new(data_dict):
     print(" Making prediction...")
 
     # Load artifacts
-    model = joblib.load("models/vinit_model.pkl")
+    model = joblib.load("models/vinit_models.pkl")
     scaler = joblib.load("models/vinit_scalar.pkl")
     columns = joblib.load("models/columns.pkl")
 

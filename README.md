@@ -111,4 +111,4 @@ pip install -r requirements.txt
 python main.py
 
 npm start (frontend)
-uvicorn app:app --reload
+uvicorn app:app --reload (fastAPI)

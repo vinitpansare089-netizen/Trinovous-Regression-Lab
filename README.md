@@ -40,7 +40,7 @@ Predict student performance based on behavioral and academic features.
 | Train RMSE | ~2.37 |
 | Test RMSE | ~3.97 |
 | MAE | ~3.22 |
-| R² Score | ~0.23 |
+| R² Score | ~0.23|
 
 
 Two modeling approaches:

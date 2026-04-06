@@ -112,4 +112,4 @@ python main.py
 
 npm start (frontend)
 uvicorn app:app --reload (fastAPI)
-node server.js
+node server.js (Backend)

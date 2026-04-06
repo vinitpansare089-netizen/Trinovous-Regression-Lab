@@ -109,3 +109,5 @@ currently not satisfied with result.
 ```bash
 pip install -r requirements.txt
 python main.py
+
+npm start 

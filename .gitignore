@@ -6,7 +6,7 @@ __pycache__/
 *.pyd
 
 # Models & artifacts
-models/*.pkl
+models/*.pklw
 artifacts/
 
 #Node - Backend

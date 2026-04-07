@@ -33,6 +33,7 @@ def predict(data: dict):
     #Scaling from 0 - 1
     df = scaler.transform(df)
 
+    #model will predict from dataset
     prediction = model.predict(df)[0]
 
     return {f'Prediction' : float(prediction)}

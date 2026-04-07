@@ -16,6 +16,7 @@ columns = joblib.load("models/columns.pkl")
 def Home():
     return {'message' : "working Vinit...."}
 
+#for prediction 
 @app.post("/predict")
 def predict(data: dict):
     print("incoming request: ", data)

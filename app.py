@@ -11,6 +11,7 @@ model = joblib.load("models/vinit_models.pkl")
 scaler = joblib.load("models/vinit_scalar.pkl")
 columns = joblib.load("models/columns.pkl")
 
+#Api for testing
 @app.get("/")
 def Home():
     return {'message' : "working Vinit...."}

@@ -96,6 +96,8 @@ project/
 ├── data/
 ├── main.py
 |--frontend/
+|--backend/
+
 later: frontend and backend
 and fine tuning model again
 for better model predictions

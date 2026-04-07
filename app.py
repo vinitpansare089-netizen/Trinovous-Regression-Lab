@@ -36,6 +36,7 @@ def predict(data: dict):
     #model will predict from dataset
     prediction = model.predict(df)[0]
 
+    #return prediction 
     return {f'Prediction' : float(prediction)}
 
 

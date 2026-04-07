@@ -30,6 +30,7 @@ def predict(data: dict):
     #reindexing karne ke liye according to what we except
     df = df.reindex(columns=columns, fill_value=0)
 
+    #Scaling from 0 - 1
     df = scaler.transform(df)
 
     prediction = model.predict(df)[0]

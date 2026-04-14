@@ -42,7 +42,7 @@ Predict student performance based on behavioral and academic features.
 | MAE | ~3.22 |
 | R² Score | ~0.23|
 
-
+\\
 Two modeling approaches:
 
 1. Without prior grades → realistic scenario (RMSE ~4)
